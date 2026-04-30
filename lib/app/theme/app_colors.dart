@@ -1,24 +1,36 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  // Couleurs principales
-  static const Color background = Color(0xFF0A0E1A);
-  static const Color surface = Color(0xFF141824);
-  static const Color surfaceAlt = Color(0xFF1E2336);
+  // ── Light Theme Base ────────────────────────────────────────────────────────
+  static const Color background   = Color(0xFFF8F9FC);
+  static const Color surface      = Color(0xFFFFFFFF);
+  static const Color surfaceAlt   = Color(0xFFF0F2F8);
 
-  // Accents
-  static const Color primary = Color(0xFFF5C518);
-  static const Color secondary = Color(0xFF00E5A0);
-  static const Color accent = Color(0xFFFF5F3D);
-  static const Color purple = Color(0xFF7B5EA7);
+  // ── Accents ─────────────────────────────────────────────────────────────────
+  static const Color primary      = Color(0xFFE65100); // Orange brûlé JOJ
+  static const Color secondary    = Color(0xFF00B37E); // Vert succès
+  static const Color accent       = Color(0xFF2563EB); // Bleu accent
+  static const Color purple       = Color(0xFF7C3AED); // Violet culture
 
-  // Textes
-  static const Color textPrimary = Color(0xFFFFFFFF);
-  static const Color textSecondary = Color(0xFFB0B8D1);
-  static const Color textMuted = Color(0xFF5A6280);
+  // ── Textes ──────────────────────────────────────────────────────────────────
+  static const Color textPrimary   = Color(0xFF0D1117);
+  static const Color textSecondary = Color(0xFF4A5568);
+  static const Color textMuted     = Color(0xFF9AA3B2);
 
-  // États
-  static const Color success = Color(0xFF00E5A0);
-  static const Color error = Color(0xFFFF4757);
-  static const Color warning = Color(0xFFF5C518);
+  // ── États ───────────────────────────────────────────────────────────────────
+  static const Color success  = Color(0xFF00B37E);
+  static const Color error    = Color(0xFFE53E3E);
+  static const Color warning  = Color(0xFFF59E0B);
+
+  // ── Home Screen ─────────────────────────────────────────────────────────────
+  static const Color orange     = Color(0xFFE65100);
+  static const Color redBadge   = Color(0xFFEB2011);
+  static const Color bgLight    = Color(0xFFFBF6F0);
+  static const Color bgWhite    = Color(0xFFFFFFFF);
+  static const Color shadowColor = Color(0x14000000);
+  static const Color textGrey   = Color(0xFF9AA3B2);
+  static const Color bgLighter  = Color(0xFFFFFCFC);
+
+  // ── Divider / Border ────────────────────────────────────────────────────────
+  static const Color border     = Color(0xFFE8ECF4);
 }

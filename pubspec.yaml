@@ -39,3 +39,31 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/lion_3d.png
+    - assets/images/festival.png
+    - assets/images/concertYoussou.png
+    - assets/images/imagePost.png
+    - assets/images/goreeHeader.png
+    - assets/images/activiteNgor.png
+    - assets/images/activiteGoree.png
+    - assets/images/beachParty.png
+    - assets/images/explore_hero.png
+    - assets/images/logo.png
+    - assets/images/auth_lion.png
+    - assets/images/olivia_avatar.png
+    - assets/images/login_background.png
+    - assets/images/group5.png
+    - assets/images/flag_left.png
+    - assets/images/flag_right.png
+    - assets/images/athlete1.png
+    - assets/images/athlete2.png
+    - assets/images/rectangle65.png
+    - assets/images/Rectangle 51.png
+    - assets/images/Rectangle 53.png
+    - assets/images/Rectangle 55.png
+    - assets/images/Rectangle 57.png
+    - assets/images/ellipse5.png
+    - assets/images/ellipse6.png
+    - assets/images/ellipse7.png
+    - assets/images/image8.png

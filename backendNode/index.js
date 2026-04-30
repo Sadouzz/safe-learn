@@ -1,0 +1,1 @@
+console.log("Hello from my new Node.js project!");

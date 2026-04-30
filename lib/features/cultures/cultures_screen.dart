@@ -22,17 +22,34 @@ class CulturesScreen extends StatelessWidget {
               height: 200,
               width: double.infinity,
               decoration: BoxDecoration(
-                color: AppColors.surface,
+                color: AppColors.surfaceAlt,
                 borderRadius: BorderRadius.circular(24),
                 border: Border.all(color: AppColors.purple.withValues(alpha: 0.3)),
-                image: const DecorationImage(
-                  image: NetworkImage('https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Africa_%28orthographic_projection%29.svg/540px-Africa_%28orthographic_projection%29.svg.png'),
-                  fit: BoxFit.contain,
-                  opacity: 0.5,
-                ),
               ),
-              child: Center(
-                child: Text('Carte Interactive', style: AppTextStyles.h2.copyWith(color: AppColors.purple)),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(24),
+                child: Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    Image.network(
+                      'https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Africa_%28orthographic_projection%29.svg/540px-Africa_%28orthographic_projection%29.svg.png',
+                      fit: BoxFit.contain,
+                      opacity: const AlwaysStoppedAnimation(0.5),
+                      errorBuilder: (context, error, stackTrace) => Container(
+                        color: AppColors.surfaceAlt,
+                        child: const Icon(
+                          Icons.public_outlined,
+                          size: 80,
+                          color: AppColors.textMuted,
+                        ),
+                      ),
+                    ),
+                    Text(
+                      'Carte Interactive',
+                      style: AppTextStyles.h2.copyWith(color: AppColors.purple),
+                    ),
+                  ],
+                ),
               ),
             ).animate().fadeIn(),
             const SizedBox(height: 32),

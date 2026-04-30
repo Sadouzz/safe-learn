@@ -13,7 +13,7 @@ class JojApp extends ConsumerWidget {
     return MaterialApp.router(
       title: 'JOJ Afrique Super-App',
       debugShowCheckedModeBanner: false,
-      theme: AppTheme.darkTheme,
+      theme: AppTheme.lightTheme,
       routerConfig: router,
     );
   }

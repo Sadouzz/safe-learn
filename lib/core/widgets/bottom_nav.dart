@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -15,7 +16,7 @@ class AppBottomNavShell extends StatelessWidget {
       body: child,
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
-          color: AppColors.surface,
+          color: Colors.white,
           border: Border(top: BorderSide(color: Colors.white.withValues(alpha: 0.08))),
         ),
         child: SafeArea(
@@ -25,10 +26,10 @@ class AppBottomNavShell extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 _NavItem(icon: Icons.home_rounded, label: 'Accueil', path: '/home'),
-                _NavItem(icon: Icons.quiz_rounded, label: 'Quiz', path: '/quiz'),
-                _NavItem(icon: Icons.eco_rounded, label: 'Missions', path: '/missions'),
-                _NavItem(icon: Icons.public_rounded, label: 'Cultures', path: '/cultures'),
-                _NavItem(icon: Icons.person_rounded, label: 'Profil', path: '/profil'),
+                _NavItem(icon: Icons.sports_esports_rounded, label: 'Games', path: '/quiz'),
+                _NavItem(icon: Icons.public_rounded, label: 'Explore', path: '/explore'),
+                _NavItem(icon: Icons.map, label: 'Map', path: '/map'),
+                _NavItem(icon: Icons.people, label: 'Community', path: '/community'),
               ],
             ),
           ),
@@ -84,3 +85,4 @@ class _NavItem extends StatelessWidget {
     );
   }
 }
+
